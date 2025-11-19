@@ -1,10 +1,23 @@
 import { Component } from '@angular/core';
-
+import { HomeComponent } from './home/home.component';
+import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  standalone: true,
+  template:`
+    <main>
+      <header class="nome-marca">
+        <img class="logo-marca" src="/assets/logo.svg"
+        alt="logo" aria-hidden="true">
+      </header>
+      <section class="content">
+        <router-outlet></router-outlet>
+      </section>
+    </main>
+    `,
+  styleUrls: ['./app.component.css'],
+  imports: [HomeComponent, RouterModule]
 })
 export class AppComponent {
-  title = 'angular-houses';
+  title = 'default';
 }
