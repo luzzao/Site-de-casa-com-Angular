@@ -38,7 +38,7 @@ import { RouterModule } from '@angular/router';
             <input id="email" type="email" formControlName="email">
             <button type="submit" class="primary">Compre Já!</button><br><br>
           </form>
-          <a style="text-decoration: none" routerLink="/">Ver mais opções de casas!</a>
+          <a style="text-decoration: none" routerLink="/">Voltar para opções de casas!</a>
         </section>
     </article>
   `,
